@@ -34,3 +34,7 @@ jobs:
         run: |
           cd 03-basic-asset/final
           pytest --cov app
+      - name: PyTest exercise 4
+        run: |
+          cd 04-s3-extended/final
+          pytest --cov app

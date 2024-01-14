@@ -28,12 +28,16 @@ poetry install
 
 ## Exercise 1: building our first app
 
-Follow the instructions in [the README](./01-my-first-stack/starter/README.md)
+Follow the instructions in [the README](./01-my-first-stack/README.md)
 
 ## Exercise 2: A custom construct
 
-Follow the instructions in [the README](./02-custom-construct/starter/README.md)
+Follow the instructions in [the README](./02-custom-construct/README.md)
 
 ## Exercise 3: A basic asset
 
-Follow the instructions in [the README](./03-basic-asset/starter/README.md)
+Follow the instructions in [the README](./03-basic-asset/README.md)
+
+## Exercise 4: S3 extended
+
+Follow the instructions in [the README](./04-s3-extended/README.md)
