@@ -1,4 +1,4 @@
-# Exercise 01 - my first stack - initializing a new stack
+# Lab 01 - my first stack - initializing a new stack
 
 1. Initialize the app:
 

@@ -1,4 +1,4 @@
-# Exercise 02 - a custom construct
+# Lab 02 - a custom construct
 
 1. Open the file `02-custom-construct/starter/custom_construct/custom_construct.py` and complete all TODOs.
 2. Run `pytest` to check if your code complies
@@ -11,3 +11,6 @@
 ```bash
 aws s3 cp test.txt s3://<YOUR_BUCKET>/test2.txt
 ```
+
+8. Tear the stack down.
+9. Double check - is your bucket gone?
