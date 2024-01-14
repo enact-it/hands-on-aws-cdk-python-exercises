@@ -22,5 +22,11 @@ jobs:
           pip install --no-cache-dir --upgrade poetry==1.7.0 && \
           poetry config virtualenvs.create false && \
           poetry install --with test --no-interaction --no-ansi
-      - name: PyTest
-        run: pytest --cov app
+      - name: PyTest exercise 1
+        run: |
+          cd 01-my-first-stack/final
+          pytest --cov app
+      - name: PyTest exercise 2
+        run: |
+          cd ../02-custom-construct/final
+          pytest --cov app

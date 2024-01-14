@@ -1,9 +1,9 @@
-# Exercise 01 - my first Stack - building one from scratch
+# Exercise 01 - my first stack - initializing a new stack
 
 1. Initialize the app:
 
 ```bash
-cdk init <YOUR_APP_NAME> --language python
+cdk init sample-app --language python
 ```
 
 2. Activate the virtual environment
@@ -49,7 +49,21 @@ cdk diff
 cdk deploy
 ```
 
-9. Tear it down
+9. Find the SNS topic, and post a message to it (you can also do this in the console)
+
+```bash
+aws sns list-topics
+aws sns publish --topic-arn <YOUR_TOPIC> --message "hi"
+```
+
+10. Find the SQS queue, and poll for messages (you can also do this in the console)
+
+```bash
+aws sqs list-queues
+aws sqs receive-message --queue-url <YOUR_QUEUE_URL>
+```
+
+11. Tear everything down
 
 ```bash
 cdk destroy
