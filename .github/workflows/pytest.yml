@@ -25,16 +25,16 @@ jobs:
       - name: PyTest exercise 1
         run: |
           cd 01-my-first-stack/final
-          pytest --cov app
+          pytest
       - name: PyTest exercise 2
         run: |
           cd 02-custom-construct/final
-          pytest --cov app
+          pytest
       - name: PyTest exercise 3
         run: |
           cd 03-basic-asset/final
-          pytest --cov app
+          pytest
       - name: PyTest exercise 4
         run: |
           cd 04-s3-extended/final
-          pytest --cov app
+          pytest
