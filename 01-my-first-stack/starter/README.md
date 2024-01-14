@@ -1,4 +1,4 @@
-# My First Stack
+# My First Stack - building one from scratch
 
 1. Initialize the app:
 

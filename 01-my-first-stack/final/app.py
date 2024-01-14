@@ -2,10 +2,10 @@
 
 import aws_cdk as cdk
 
-from final.final_stack import FinalStack
+from myfirst.my_first_stack import MyFirstStack
 
 
 app = cdk.App()
-FinalStack(app, "FinalStack")
+MyFirstStack(app, "MyFirstStack")
 
 app.synth()
