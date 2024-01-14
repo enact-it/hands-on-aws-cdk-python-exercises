@@ -28,5 +28,5 @@ jobs:
           pytest --cov app
       - name: PyTest exercise 2
         run: |
-          cd ../02-custom-construct/final
+          cd 02-custom-construct/final
           pytest --cov app
