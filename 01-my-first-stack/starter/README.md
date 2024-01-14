@@ -1,9 +1,9 @@
-# My First Stack - building one from scratch
+# Exercise 01 - my first Stack - building one from scratch
 
 1. Initialize the app:
 
 ```bash
-cdk init sample-app --language python
+cdk init <YOUR_APP_NAME> --language python
 ```
 
 2. Activate the virtual environment
@@ -29,4 +29,28 @@ cdk synth
 
 ```bash
 pytest
+```
+
+6. Check out the stacks we're deploying
+
+```bash
+cdk ls
+```
+
+7. Check the diff
+
+```bash
+cdk diff
+```
+
+8. Try to deploy the stack!
+
+```bash
+cdk deploy
+```
+
+9. Tear it down
+
+```bash
+cdk destroy
 ```
