@@ -20,7 +20,7 @@ class MainApp(Construct):
         # TODO create a subscription of type "UrlSubscription" on the topic exported by the CustomConstruct class
         custom_construct.topic.add_subscription(
             subs.UrlSubscription(
-                "https://webhook.site/#!/0816e8e5-ade9-4ebb-ac53-f1cdf73725a9/bfbd77fe-6fa4-415e-8353-b2505ae3a41b"
+                "https://webhook.site/7d02f294-7de2-44d9-9355-2d6664b34e8e"
             )
         )
 
