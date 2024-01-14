@@ -1,0 +1,40 @@
+name: PyTest
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+jobs:
+  pytest:
+    name: PyTest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v4
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install requirements
+        run: |
+          pip install --no-cache-dir --upgrade poetry==1.7.0 && \
+          poetry config virtualenvs.create false && \
+          poetry install --with test --no-interaction --no-ansi
+      - name: PyTest exercise 1
+        run: |
+          cd 01-my-first-stack/final
+          pytest
+      - name: PyTest exercise 2
+        run: |
+          cd 02-custom-construct/final
+          pytest
+      - name: PyTest exercise 3
+        run: |
+          cd 03-basic-asset/final
+          pytest
+      - name: PyTest exercise 4
+        run: |
+          cd 04-s3-extended/final
+          pytest
