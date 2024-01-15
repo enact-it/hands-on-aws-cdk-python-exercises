@@ -1,7 +1,7 @@
 # Lab 03 - basic asset
 
 1. Create a new CDK app
-2. Add a lambda function, and point it to the folder ''
+2. Add a lambda function, and point it to the `handler` folder
 3. Deploy the app
 4. List the functions
 

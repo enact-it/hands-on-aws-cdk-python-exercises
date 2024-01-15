@@ -10,7 +10,7 @@ python = "^3.11"
 poetry-plugin-export = "^1.6.0"
 python-dotenv = "^1.0.0"
 aws-cdk-lib ="^2.121.1"
-constructs ="10.0.0,<11.0.0"
+constructs ="10.3.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
