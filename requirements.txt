@@ -1,18 +1,18 @@
 attrs==23.2.0 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:935dc3b529c262f6cf76e50877d35a4bd3c1de194fd41f47a2b7ae8f19971f30 \
     --hash=sha256:99b87a485a5820b23b879f04c2305b44b951b502fd64be915879d77a7e8fc6f1
-aws-cdk-asset-awscli-v1==2.2.201 ; python_version >= "3.11" and python_version < "4.0" \
-    --hash=sha256:56fe2ef91d3c8d33559aa32d2130e5f35f23af1fb82f06648ebbc82ffe0a5879 \
-    --hash=sha256:88d1c269fd5cf8c9f6e0464ed22e2d4f269dfd5b36b8c4d37687bdba9c269839
+aws-cdk-asset-awscli-v1==2.2.202 ; python_version >= "3.11" and python_version < "4.0" \
+    --hash=sha256:3ef87d6530736b3a7b0f777fe3b4297994dd40c3ce9306d95f80f48fb18036e8 \
+    --hash=sha256:96205ea2e5e132ec52fabfff37ea25b9b859498f167d05b32564c949822cd331
 aws-cdk-asset-kubectl-v20==2.1.2 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:346283e43018a43e3b3ca571de3f44e85d49c038dc20851894cb8f9b2052b164 \
     --hash=sha256:7f0617ab6cb942b066bd7174bf3e1f377e57878c3e1cddc21d6b2d13c92d0cc1
 aws-cdk-asset-node-proxy-agent-v6==2.0.1 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:42cdbc1de2ed3f845e3eb883a72f58fc7e5554c2e0b6fcdb366c159778dce74d \
     --hash=sha256:e442673d4f93137ab165b75386761b1d46eea25fc5015e5145ae3afa9da06b6e
-aws-cdk-lib==2.121.1 ; python_version >= "3.11" and python_version < "4.0" \
-    --hash=sha256:2081ce974124f303348901719f791957ce6aa6b184c6fee30b988bc09f0b1bdd \
-    --hash=sha256:3ad1573000dca9360a8fbf50fd5d835910f729deaec4848438e5faa1bf79949e
+aws-cdk-lib==2.122.0 ; python_version >= "3.11" and python_version < "4.0" \
+    --hash=sha256:322a230864076738da8d138b0dbf2050a31c0caa7f27d8da128d8174150aaebe \
+    --hash=sha256:562eb5cb0f2a5111a71a4a3b727d5d077c0eaaa55dc1748922ccdb3f25ef49cd
 build==1.0.3 ; python_version >= "3.11" and python_version < "4.0" \
     --hash=sha256:538aab1b64f9828977f84bc63ae570b060a8ed1be419e7870b8b4fc5e6ea553b \
     --hash=sha256:589bf99a67df7c9cf07ec0ac0e5e2ea5d4b37ac63301c4986d1acb126aa83f8f
