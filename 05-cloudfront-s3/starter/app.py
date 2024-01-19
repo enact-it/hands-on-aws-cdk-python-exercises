@@ -7,7 +7,7 @@ from starter.final_stack import FinalStack
 app = cdk.App()
 stack = FinalStack(
     app,
-    "FinalStack",
+    "05-CloudFront-S3",
 )
 
 app.synth()

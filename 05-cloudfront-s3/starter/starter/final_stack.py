@@ -3,7 +3,6 @@ from aws_cdk import (
     Stack,
     # TODO uncomment
     # aws_s3 as s3,
-    # aws_s3_assets as s3_assets,
     # aws_cloudfront as cloudfront,
     # aws_cloudfront_origins as origins,
     # RemovalPolicy,
@@ -17,8 +16,6 @@ class FinalStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         # TODO create a Bucket
-
-        # TODO Add index.html s3 asset
 
         # TODO Add CloudFront origin access identity
 

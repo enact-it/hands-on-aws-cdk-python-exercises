@@ -2,7 +2,6 @@ from aws_cdk import (
     # Duration,
     Stack,
     aws_s3 as s3,
-    aws_s3_assets as s3_assets,
     aws_cloudfront as cloudfront,
     aws_cloudfront_origins as origins,
     RemovalPolicy,
@@ -22,13 +21,6 @@ class FinalStack(Stack):
             removal_policy=RemovalPolicy.DESTROY,
             auto_delete_objects=True,
             # Add bucket asset
-        )
-
-        # TODO Add index.html s3 asset
-        s3_assets.Asset(
-            self,
-            "Asset",
-            path="../files/index.html",
         )
 
         # TODO Add CloudFront origin access identity
