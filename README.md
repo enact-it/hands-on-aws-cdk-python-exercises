@@ -41,3 +41,7 @@ Follow the instructions in [the README](./03-basic-asset/README.md)
 ## Exercise 4: S3 extended
 
 Follow the instructions in [the README](./04-s3-extended/README.md)
+
+## Exercise 5: CloudFront backed by S3
+
+Follow the instructions in [the README](./05-cloudfront-s3/README.md)

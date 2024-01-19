@@ -26,6 +26,6 @@ class MainApp(Construct):
 
 
 app = cdk.App()
-MainApp(app, "Exercise2")
+MainApp(app, "02-Custom-Construct")
 
 app.synth()

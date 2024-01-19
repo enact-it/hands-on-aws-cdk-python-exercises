@@ -6,6 +6,6 @@ from myfirst.my_first_stack import MyFirstStack
 
 
 app = cdk.App()
-MyFirstStack(app, "MyFirstStack")
+MyFirstStack(app, "01-My-First-Stack")
 
 app.synth()

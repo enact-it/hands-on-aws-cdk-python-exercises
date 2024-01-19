@@ -5,6 +5,6 @@ from final.final_stack import FinalStack
 
 
 app = cdk.App()
-FinalStack(app, "FinalStack")
+FinalStack(app, "04-S3-extended")
 
 app.synth()

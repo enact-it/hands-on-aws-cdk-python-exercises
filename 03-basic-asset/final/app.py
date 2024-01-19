@@ -6,5 +6,5 @@ from final.final_stack import FinalStack
 
 
 app = cdk.App()
-FinalStack(app, "FinalStack")
+FinalStack(app, "03-Basic-Asset")
 app.synth()
