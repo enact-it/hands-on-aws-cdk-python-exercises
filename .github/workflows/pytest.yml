@@ -38,3 +38,7 @@ jobs:
         run: |
           cd 04-s3-extended/final
           pytest
+      - name: PyTest exercise 5
+        run: |
+          cd 05-cloudfront-s3/final
+          pytest
