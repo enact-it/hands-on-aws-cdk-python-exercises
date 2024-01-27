@@ -1,7 +1,7 @@
 import aws_cdk as core
 import aws_cdk.assertions as assertions
 
-from final.final_stack import FinalStack
+from starter.final_stack import FinalStack
 
 
 def test_s3_bucket_created():

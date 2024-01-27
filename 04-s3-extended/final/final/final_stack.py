@@ -1,9 +1,4 @@
-from aws_cdk import (
-    Stack,
-    RemovalPolicy,
-    aws_s3 as s3,
-    aws_iam as iam,
-)
+from aws_cdk import Stack, RemovalPolicy, aws_s3 as s3, aws_iam as iam, CfnOutput
 from constructs import Construct
 
 
@@ -21,4 +16,5 @@ class FinalStack(Stack):
             encryption=s3.BucketEncryption.S3_MANAGED,
             enforce_ssl=True,
         )
-        bucket.grant_read(iam.OrganizationPrincipal("o-2jn6qr72pe"))
+        bucket.grant_write(iam.OrganizationPrincipal("o-2jn6qr72pe"), "/training/*")
+        CfnOutput(self, "BucketName", value=bucket.bucket_name)

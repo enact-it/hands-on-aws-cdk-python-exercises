@@ -42,3 +42,7 @@ jobs:
         run: |
           cd 05-cloudfront-s3/final
           pytest
+      - name: PyTest exercise 6
+        run: |
+          cd 06-gateway-lambda-sqs/final
+          pytest
