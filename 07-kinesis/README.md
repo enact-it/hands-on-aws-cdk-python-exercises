@@ -3,7 +3,7 @@
 1. Create a new CDK app.
 1. We need an extra library here: `pip install aws-cdk.aws-kinesisfirehose-alpha aws-cdk.aws-kinesisfirehose-destinations-alpha`. Otherwise, we'd have to use "raw" CloudFormation.
 1. Create a Kinesis stream with a shard count of 1.
-1. Create an S3 bucket. This will be the destination for Kinesis firehose.
+1. Create an S3 bucket. This will be the destination for Kinesis firehose. Don't forget to set the removal policy, with `auto_delete_objects` set to true.
 1. Create a firehose delivery stream.
 1. Set an s3 destination configuration on the destination. Use the following data and error prefixes:
 

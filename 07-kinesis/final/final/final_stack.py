@@ -5,6 +5,7 @@ from aws_cdk import (
     aws_kinesisfirehose_alpha as firehose,
     aws_kinesisfirehose_destinations_alpha as firehose_destinations,
     CfnOutput,
+    RemovalPolicy,
 )
 from constructs import Construct
 
@@ -15,7 +16,12 @@ class FinalStack(Stack):
 
         stream = kinesis.Stream(self, "stream", shard_count=1)
 
-        bucket = s3.Bucket(self, "bucket")
+        bucket = s3.Bucket(
+            self,
+            "bucket",
+            removal_policy=RemovalPolicy.DESTROY,
+            auto_delete_objects=True,
+        )
 
         firehose_delivery = firehose.DeliveryStream(
             self,

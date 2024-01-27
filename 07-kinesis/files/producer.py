@@ -65,7 +65,7 @@ if __name__ == "__main__":
         f"Putting records in stream {input_stream.name} with delay of {delay} seconds."
     )
     for clicks in clickstream:
-        visitor = random.choice(range(1, 100))
+        visitor = random.choice(range(1, 100))  # nosec
         record = {
             "visitor": visitor,
             "clicks": clicks,
