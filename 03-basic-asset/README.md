@@ -16,3 +16,4 @@ aws lambda invoke --function-name <FUNCTION_NAME> <OUTFILE>
 ```
 
 6. Make a change to the handler, deploy it again, and invoke it again.
+   ~

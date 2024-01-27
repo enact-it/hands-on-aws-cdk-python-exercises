@@ -45,3 +45,7 @@ Follow the instructions in [the README](./04-s3-extended/README.md)
 ## Exercise 5: CloudFront backed by S3
 
 Follow the instructions in [the README](./05-cloudfront-s3/README.md)
+
+## Exercise 6: API Gateway with Lambda and SQS
+
+Follow the instructions in [the README](./06-gateway-lambda-sqs/README.md)
