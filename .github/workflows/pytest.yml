@@ -46,3 +46,7 @@ jobs:
         run: |
           cd 06-gateway-lambda-sqs/final
           pytest
+      - name: PyTest exercise 7
+        run: |
+          cd 07-kinesis/final
+          pytest

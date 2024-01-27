@@ -49,3 +49,7 @@ Follow the instructions in [the README](./05-cloudfront-s3/README.md)
 ## Exercise 6: API Gateway with Lambda and SQS
 
 Follow the instructions in [the README](./06-gateway-lambda-sqs/README.md)
+
+## Exercise 7: Kinesis
+
+Follow the instructions in [the README](./07-kinesis/README.md)
