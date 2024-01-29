@@ -6,13 +6,13 @@ from aws_cdk import (
     aws_ecr as ecr,
     aws_ecs as ecs,
     aws_ecs_patterns as ecs_patterns,
-    CfnOutput
+    CfnOutput,
 )
 import os
 from constructs import Construct
 
-class FinalStack(Stack):
 
+class FinalStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
@@ -23,7 +23,9 @@ class FinalStack(Stack):
         ecr.Repository(self, "Repository")
 
         # TODO create a Docker asset
-        asset = ecr_assets.DockerImageAsset(self, "Nginx", directory=os.path.join("../files"))
+        asset = ecr_assets.DockerImageAsset(
+            self, "Nginx", directory=os.path.join("../files")
+        )
 
         # TODO create an ECS cluster
         cluster = ecs.Cluster(self, "Cluster")
@@ -41,4 +43,6 @@ class FinalStack(Stack):
             public_load_balancer=True,
         )
 
-        CfnOutput(self, "LoadBalancerDNS", value=service.load_balancer.load_balancer_dns_name)
+        CfnOutput(
+            self, "LoadBalancerDNS", value=service.load_balancer.load_balancer_dns_name
+        )
